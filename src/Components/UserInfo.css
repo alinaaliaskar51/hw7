@@ -1,0 +1,11 @@
+.UserInfo {
+    padding-top: 10px;
+    border-radius: 20px;
+    width: 200px;
+    border-color: black;
+    border: 1px solid;
+    text-align: center;
+}
+.UserInfo-name {
+    margin: 20px;
+}
