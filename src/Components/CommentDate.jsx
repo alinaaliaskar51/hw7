@@ -1,12 +1,13 @@
 
-function formatDate (date) {
-    return date.toLocaleString()
-}
-
 function CommentDate (props) {
+    let month = props.date.toLocaleString('en-Us',{month:'long'});
+    let day = props.date.toLocaleString('en-Us',{day:'2-digit'});
+    let year = props.date.getFullYear()
     return (
         <div className='Comment-date'> 
-        {formatDate(props.date)}
+
+          <div>{month}{year}{day}</div>
+          
         </div>
     )
 }
